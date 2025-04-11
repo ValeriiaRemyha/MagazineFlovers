@@ -1,0 +1,50 @@
+header {
+  background-color: var(--background-color);
+  font-family: "Inter", sans-serif;
+  color: var(--header-color);
+  .header__img {
+    width: 80px;
+    height: 100px;
+    vertical-align: middle; 
+  }
+  .header__logo {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .header__nav {
+    align-items: center;
+    padding: 0 5px;
+    font-size: 16px;
+
+    @media (min-width: 600px) {
+      display: flex;
+    }
+  }
+    .header__logo {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .header__menu {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 600px) {
+        flex: 1;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .menu__item {
+        color: var(--text-color);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+}
